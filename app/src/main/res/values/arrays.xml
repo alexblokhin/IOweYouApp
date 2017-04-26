@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="friend_names">
+        <item>Jennifer Martinyuk</item>
+        <item>Peter Melnik</item>
+        <item>David Yukhimets</item>
+    </string-array>
+
+    <string-array name="friend_descriptions">
+        <item>Owes you: $4.00</item>
+        <item>You Owe: $14.83</item>
+        <item>Owes you: $3.00</item>
+    </string-array>
+
+    <string-array name="group_names">
+        <item>Pizza Night</item>
+        <item>Movie Night</item>
+        <item>Chinese</item>
+    </string-array>
+
+    <string-array name="group_descriptions">
+        <item>Owes you: $4.00</item>
+        <item>You Owe: $14.83</item>
+        <item>Owes you: $3.00</item>
+    </string-array>
+
+</resources>

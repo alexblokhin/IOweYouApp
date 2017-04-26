@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">I Owe You</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="friends">FRIENDS</string>
+    <string name="groups">GROUPS</string>
+
+</resources>
