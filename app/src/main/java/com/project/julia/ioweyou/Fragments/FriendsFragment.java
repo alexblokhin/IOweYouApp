@@ -14,10 +14,6 @@ import com.project.julia.ioweyou.Adapters.FriendsAdapter;
 import com.project.julia.ioweyou.Adapters.GroupsAdapter;
 import com.project.julia.ioweyou.R;
 
-/**
- * Created by Alex on 4/21/2017.
- */
-
 public class FriendsFragment extends Fragment {
     int color;
     GroupsAdapter adapter;

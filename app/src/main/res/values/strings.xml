@@ -4,5 +4,24 @@
 
     <string name="friends">FRIENDS</string>
     <string name="groups">GROUPS</string>
+    <string name="title_activity_bill_details">BillDetails</string>
+    <string name="label_description">Description</string>
+    <string name="label_notes_description">Add note</string>
+    <string name="label_tap_to_add_people">Tap to add people</string>
+    <string name="label_save_template">Save as template</string>
+    <string name="label_transaction_amount">0.00</string>
+    <string name="label_paid_by">Paid by</string>
+    <string name="label_split">Split equally</string>
+    <string name="label_paid_for">Paid for</string>
+    <string name="add_person">Add person</string>
+    <string name="label_payable">Amount Payable by Each (+ self): </string>
+    <string name="add_payer_label">Enter the name of the payer: </string>
+    <string name="error_add_payer_name_empty">Please enter a name for this person</string>
+    <string name="payer_list_info">Add or remove names here </string>
+    <string name="payer_list_label">Name</string>
+    <string name="btn_no">No</string>
+    <string name="btn_yes">Yes</string>
+    <string name="confirm_remove_payer">Are you sure you want to remove %s?</string>
+
 
 </resources>

@@ -17,10 +17,6 @@ import com.project.julia.ioweyou.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Alex on 4/21/2017.
- */
-
 public class GroupsFragment extends Fragment {
     int color;
     GroupsAdapter adapter;

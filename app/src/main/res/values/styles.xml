@@ -4,18 +4,18 @@
 
     <style name="Base.MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_700</item>
-        <item name="colorAccent">@color/orange</item>
+        <item name="colorPrimaryDark">@color/steel_grey</item>
+        <item name="colorAccent">@color/steel_grey</item>
         <item name="windowActionBar">false</item>
         <item name="windowActionBarOverlay">true</item>
         <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/bg_light</item>
+        <item name="android:windowBackground">@color/white_smoke</item>
     </style>
 
     <style name="MyAppDialog" parent="Theme.AppCompat.Light.Dialog">
         <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryDark">@color/primary_700</item>
-        <item name="colorAccent">@color/orange</item>
+        <item name="colorPrimaryDark">@color/steel_grey</item>
+        <item name="colorAccent">@color/steel_grey</item>
     </style>
 
     <style name="Widget.MyApp.HeaderBar.Spinner" parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
@@ -33,9 +33,79 @@
 
     <color name="bg_light">#FAFAFA</color>
 
-    <style name="MyTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="MyTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="MyTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="MyTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FormRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/form_row_bottom_margin</item>
+        <item name="android:layout_marginTop">@dimen/form_row_bottom_margin</item>
+    </style>
+
+    <style name="FormRow_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/form_row_bottom_margin</item>
+        <item name="android:layout_marginTop">@dimen/title_form_row_bottom_margin</item>
+    </style>
+
+    <style name="FormRow_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/listPreferredItemHeight</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/no_row_bottom_margin</item>
+        <item name="android:layout_marginTop">@dimen/form_row_bottom_margin</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+        <item name="android:layout_marginLeft">50dp</item>
+    </style>
+
+    <style name="FormIcon">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+
+    <style name="Dropdown.TextView" parent="@style/Widget.AppCompat.Spinner.DropDown.ActionBar">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+    </style>
+
+    <style name="SmallButton">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/smallbutton_shape_selector</item>
+        <item name="android:shadowColor">@color/shadow</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">5</item>
+        <item name="android:textColor">@drawable/smallbutton_color_selector</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <style name="QueryText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white_smoke</item>
+        <item name="android:textSize">16sp</item>
+    </style>
 
 
 </resources>

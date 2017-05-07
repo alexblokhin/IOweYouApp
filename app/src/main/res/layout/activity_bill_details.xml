@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableLayout android:id="@+id/bil_details_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dialog_padding"
+            android:stretchColumns="1"
+            android:orientation="vertical" >
+
+            <TableRow style="@style/FormRow">
+                <AutoCompleteTextView
+                    android:id="@+id/input_transaction_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:completionThreshold="1"
+                    android:hint="@string/label_description"
+                    android:inputType="textCapSentences"
+                    android:imeOptions="actionNext"
+                    android:nextFocusDown="@+id/input_transaction_amount"
+                    android:background="@android:color/transparent"
+                    android:textSize="22sp">
+
+                    <requestFocus/>
+                </AutoCompleteTextView>
+            </TableRow>
+
+            <TableRow style="@style/FormRow_title">
+
+                <ImageView style="@style/FormIcon"
+                    android:src="@drawable/ic_cash"/>
+
+                <EditText
+                    android:id="@+id/input_transaction_amount"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="@string/label_transaction_amount"
+                    android:inputType="numberDecimal"
+                    android:nextFocusDown="@+id/input_description"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp" />
+
+            </TableRow>
+
+            <View style="@style/Divider" />
+
+            <TableRow style="@style/FormRow">
+
+                <ImageView style="@style/FormIcon"
+                    android:src="@drawable/ic_person_black_24dp"/>
+
+                <EditText android:id="@+id/input_paid_by"
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/label_paid_by"
+                    android:inputType="textMultiLine|textCapSentences" />
+
+            </TableRow>
+
+            <View style="@style/Divider" />
+
+            <TableRow android:id="@+id/layout_double_entry"
+                style="@style/FormRow" >
+
+                <ImageView style="@style/FormIcon"
+                    android:src="@drawable/content_split_holo_light"/>
+
+                <TextView android:id="@+id/input_split"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:paddingLeft="20dp"
+                    android:text="@string/label_split"
+                    style="@style/Dropdown.TextView" />
+            </TableRow>
+
+            <View style="@style/Divider" />
+
+            <TableRow android:id="@+id/paid_For"
+                style="@style/FormRow" >
+
+                <ImageView style="@style/FormIcon"
+                    android:src="@drawable/ic_group_black_24dp"/>
+
+                <TextView android:id="@+id/input_paidFor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="@string/label_tap_to_add_people"
+                    style="@style/Dropdown.TextView" />
+            </TableRow>
+
+            <TableRow android:id="@+id/payable"
+                style="@style/FormRow_bottom" >
+
+                <TextView android:id="@+id/payable_by_each"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_weight="5"
+                    android:text="@string/label_payable" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:background="@color/steel_grey_trans"
+        android:orientation="horizontal" >
+
+
+        <TableLayout
+            android:id="@+id/bottom_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dialog_padding"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:id="@+id/total"
+                style="@style/FormRow">
+
+                <TextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="@string/label_transaction_amount"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="40sp"
+                android:textColor="@color/primary" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
